@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(255, 122, 144);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    background: rgb(238, 238, 238);
+}
+
+.button {
+    padding: 10px;
+    background-color: rgb(255, 122, 144);
+    color: #eee;
+    border: none;
+}
+
+.box {
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    background-color: #333;
+    color:rgb(255, 122, 144);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid rgb(255, 122, 144);
+}
+
+.main-aside h2 {
+    text-align: center;
+}
+
+.main-aside ul {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+.main-aside ul a {
+    color:rgb(255, 122, 144);
+    text-decoration: none;
+}
+
+.main-aside ul a:visited {
+    color: blueviolet;
+}
+
+.main-aside ul a:hover {
+    color: rgb(215, 173, 255);
+}
+
+/* Formulários */
+
+.main-form {
+    padding-left: 10px;
+}
+
+.main-form .form-group {
+    padding-bottom: 10px;
+}
+
+.main-form .form-group input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.main-form .form-group textarea {
+    background-color: #eee;
+    padding: 10px;
+    width: 100%;
+}
+
+.main-form .form-group label {
+    display: block;
+}
+
+/* Positions */
+
+.relative {
+    position: relative;
+    border: 2px solid #333;
+    height: 500px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.relative .absolute {
+    position: absolute;
+    bottom: 0;
+}
+
+.relative .absolute h2 {
+    margin: 0;
+}
+
+/* Barra de navegação e botão */
+#main-navbar {
+    background: #333;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.fixed-button {
+    background: rgb(255, 122, 144);
+    color: #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+/* Categorias
+.categories ul {
+    list-style: none;
+}
+
+.categories ul li:first-child {
+    color: blueviolet;
+}
+
+.categories ul li:last-child {
+    color: rgb(215, 173, 255);
+}
+ */
+
+.categories ul li:nth-child(even){
+    color:blueviolet;
+}
+
+.categories ul li:nth-child(odd) {
+    color:cornflowerblue;
+}
+
+.main-footer {
+    background: rgb(31, 31, 31);
+    padding: 3px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* positions
+
+static: padrão, segue o fluxo da pg; propriedades não aplicáveis
+relative: propriedades aplicáveis (top, bottom, right e left)
+absolute: posicionado com relação ao seu elemento pai que é absolute. caso não tenha "pai", é posicionado em relação ao body
+fixed: posicionado em relação ao viewport; fica sempre na mesma posição, mesmo com rolamento de pg
+sticky: posicionado em relação ao scroll
+
+*/
+
+/* Pseudo-classes 
+
+first-child: primeiro elemento
+last-child: último elemento
+nth-child(n): elemento selecionado
+
+*/
+

@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+
+.container {
+    margin: 95px;
+    padding-right: 95px;
+    padding-left: 95px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10vh 50vh 8vh;
+    grid-template-areas: "h h"
+                         "s a"
+                         "f f";
+    grid-gap: 5px;
+}
+
+.menu {
+    height: 100%;
+    background: #ff6600;
+    grid-area: h;
+    border-radius: 5px;
+}
+
+.section {
+    height: 100%;
+    background: #009eb2;
+    grid-area: s;
+    border-radius: 5px;
+}
+
+.aside {
+    height: 100%;
+    background: #ff0072;
+    grid-area: a;
+    border-radius: 5px;
+}
+
+.footer {
+    height: 100%;
+    background: #221a27;
+    grid-area: f;
+    border-radius: 5px;
+}

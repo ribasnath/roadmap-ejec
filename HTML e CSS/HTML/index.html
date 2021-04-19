@@ -1,0 +1,186 @@
+<!-- Index é a página inicial do site -->
+
+<!-- Estrutura: 
+
+<head>
+    título da página
+    links para arquivos css, js
+    metadata
+
+<body>
+    aparece na pg
+    cabeçalhos, parágrafos, imagens, etc.
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Curso de HTML</title>
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="blog.html">Blog :)</a></li>
+            </ul>
+        </nav>
+
+        <!-- Cabeçalhos -->
+        <h1>Cabeçalho nível 1</h1>
+        <h2>Cabeçalho nível 2</h2>
+        <h3>Cabeçalho nível 3</h3>
+        <h4>Cabeçalho nível 4</h4>
+        <h5>Cabeçalho nível 5</h5>
+        <h6>Cabeçalho nível 6</h6>
+
+
+
+
+        <!-- Parágrafos -->
+        <p>
+           <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Cumque, alias?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam dolorum
+            cumque dolores <em>illo</em> nostrum totam molestiae facere dignissimos odit?
+        </p>
+
+
+
+
+        <!-- Elementos inline e block 
+            
+            inline - não iniciam em nova linha; só ocupam a parte
+            ex: <span> <img> <a>
+
+            block - iniciam em uma nova linha; ocupam toda linha
+            ex: <div> <h1> <h6> <form>
+
+        -->
+
+
+
+        
+        <!-- Links 
+            target blank - o link entra em outra página
+        -->
+        <a href="https://google.com" target="_blank">Não clique!</a>
+
+
+
+
+        <!-- Tabelas -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nathália Ribas</td>
+                    <td>ribasnathalia9@gmail.com</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Luciano</td>
+                    <td>luciano@gmail.com</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Graziela</td>
+                    <td>grazi@gmail.com</td>
+                    <td>39</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- quebra de linha e linha horizontal -->
+        <br>
+        <hr>
+        <br>
+
+        <!-- Formulários -->
+
+        <form action="form.php" method="POST">
+         <div>
+            <label>Primeiro nome:</label>
+            <input type="text" placeholder="Informe seu primeiro nome"/>
+         </div>
+
+         <div>
+            <label>Segundo nome:</label>
+            <input type="text"/>
+         </div>
+
+         <div>
+            <label>Email:</label>
+            <input type="email"/>
+         </div>
+
+         <div>
+            <label>Gênero:</label>
+            <select>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+         </div>
+
+         <div>
+            <label>Data de nascimento:</label>
+            <input type="date">
+         </div>
+
+         <div>
+            <label>Senha</label>
+            <input type="password">
+         </div>
+
+         <div>
+            <label>Mensagem</label>
+            <textarea name="mensagem" placeholder="Informe sua opinião sobre o nosso site."></textarea>
+         </div>
+
+         <input type="submit">
+
+        </form>
+
+
+
+
+        <!-- Botões (fora do input) 
+            as funcionalidade são feitas apenas com php
+            ou javascript -->
+        
+        <button>Click me</button>
+        <br>
+
+
+
+
+        <!-- Imagens -->
+        <img src="./gatogato.jpg" alt="Gatinho de olhos azuis" width="100" height="50">
+
+
+
+
+        <!-- Blockquote, abreviação e "citação" -->
+        <blockquote cite="https://www.lipsum.com/">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dignissimos libero vitae doloribus! Officia delectus quos quibusdam autem possimus nostrum?
+        </blockquote>
+
+        <p>Eu amo a <abbr title="World Wide Web">WWW</abbr>!</p>
+
+        <p>Informações tiradas do <cite>Wikipedia</cite></p>
+
+    </body>
+
+</html>

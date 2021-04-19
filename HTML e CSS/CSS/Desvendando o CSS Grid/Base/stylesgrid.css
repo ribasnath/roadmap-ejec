@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #eee;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "h h"
+                         "m a"
+                         "f f";
+}
+
+header {
+    background: green;
+    grid-area: h;
+}
+
+main {
+    background: #000;
+    grid-area: m;
+}
+
+aside {
+    background: olive;
+    grid-area: a;
+}
+
+footer {
+    background: salmon;
+    grid-area: f;
+}
+
+/*
+
+grid-column-start/end podem ser substituídos por grid-template-areas.
+
+*/
